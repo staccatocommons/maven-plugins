@@ -1661,12 +1661,7 @@ public abstract class AbstractJavadocMojo
      */
     protected List<String> getProjectBuildOutputDirs( MavenProject p )
     {
-        if ( StringUtils.isEmpty( p.getBuild().getOutputDirectory() ) )
-        {
-            return Collections.emptyList();
-        }
-
-        return Collections.singletonList( p.getBuild().getOutputDirectory() );
+        return Collections.emptyList();
     }
 
     /**
